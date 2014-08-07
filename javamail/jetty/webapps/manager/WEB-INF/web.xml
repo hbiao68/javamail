@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>myweb</display-name>
+	
+	<!-- 添加一个监听器，初始化系统相关的数据 -->
+	<listener>
+		<listener-class>hb.servlet.init.IninProjectListener</listener-class>
+	</listener> 
+	
+	<filter>
+		<filter-name>filter2</filter-name>
+		<filter-class>hb.jetty.Filter2</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>filter2</filter-name>
+		<url-pattern>/filter/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>sendMail</servlet-name>
+		<servlet-class>hb.servlet.mail.SendMailServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>sendMail</servlet-name>
+		<url-pattern>/mail/sendmail</url-pattern>
+	</servlet-mapping>
+</web-app>
