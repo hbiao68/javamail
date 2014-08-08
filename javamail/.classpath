@@ -30,5 +30,8 @@
 	<classpathentry kind="lib" path="jetty/lib/xmlschema-core-2.0.3.jar"/>
 	<classpathentry kind="lib" path="jetty/lib/jetty-6.1.14.jar"/>
 	<classpathentry kind="lib" path="jetty/lib/jetty-util-6.1.14.jar"/>
+	<classpathentry kind="lib" path="jetty/webapps/manager/kindeditor/jsp/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="jetty/webapps/manager/kindeditor/jsp/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="jetty/webapps/manager/kindeditor/jsp/lib/json_simple-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

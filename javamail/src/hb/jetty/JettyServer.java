@@ -19,7 +19,7 @@ public class JettyServer {
 		server.setHandler(new DefaultHandler());
 		XmlConfiguration configuration = null;
 		try {
-			configuration = new XmlConfiguration(new FileInputStream("D:/jettytest/jettytest/jetty/etc/jetty.xml"));
+			configuration = new XmlConfiguration(new FileInputStream("D:/jettytest/javamail/jetty/etc/jetty.xml"));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (SAXException e1) {
